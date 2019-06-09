@@ -1,3 +1,17 @@
+<link href="BootstrapFontawesome/fontawesome-free-5.9.0-web/css/all.min.css" rel="stylesheet">
+
+<link href="BootstrapFontawesome/fontawesome-free-5.9.0-web/css/fontawesome.min.css" rel="stylesheet">
+
+<link href="BootstrapFontawesome/fontawesome-free-5.9.0-web/css/brands.min.css" rel="stylesheet">
+
+<link href="BootstrapFontawesome/fontawesome-free-5.9.0-web/css/solid.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="BootstrapFontawesome/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="BootstrapFontawesome/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
+
+<link rel="stylesheet" href="BootstrapFontawesome/bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css">
+
 <div id="header" class="container-fluit">
     <nav class="navbar navbar-expand-lg navbar-light bg-light px-lg-5">
         <a class="navbar-brand" href="#">Brand</a>
@@ -8,7 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="home.php?page=%">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Computer</a>
@@ -38,7 +52,7 @@
                 </form>
             </ul>
             <div>
-                <a class="nav-link text-white btn btn-success" href="" id="addToCart"><i class="ion-ios-bell">cart</i><span class="badge badge-pill badge-primary">1</span></a>
+                <a class="nav-link text-white btn btn-success" href="" id="addToCart"><i class="fas fa-shopping-cart"></i><span class="badge badge-pill badge-primary">1</span></a>
 
             </div>
             <div>
