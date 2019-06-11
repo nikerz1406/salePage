@@ -1,4 +1,4 @@
-<div class="container-fluit">
+<div id="header" class="container-fluit">
     <nav class="navbar navbar-expand-lg navbar-light bg-light px-lg-5">
         <a class="navbar-brand" href="#">Brand</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,17 +18,17 @@
                         Laptop
                     </a>
                     <div class="dropdown-menu" style="top: 2.8em" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" id="menu1">Apple</a>
+                        <a class="dropdown-item" href="home.php?page=Apple">Apple</a>
 
-                        <a class="dropdown-item" href="#" id="menu2">Hp</a>
+                        <a class="dropdown-item" href="home.php?page=Hp">Hp</a>
 
-                        <a class="dropdown-item" href="#" id="menu3">Dell</a>
+                        <a class="dropdown-item" href="home.php?page=Dell">Dell</a>
 
-                        <a class="dropdown-item" href="#" id="menu4">Acer</a>
+                        <a class="dropdown-item" href="home.php?page=Acer">Acer</a>
 
-                        <a class="dropdown-item" href="#" id="menu5">Asus</a>
+                        <a class="dropdown-item" href="home.php?page=Asus">Asus</a>
 
-                        <a class="dropdown-item" href="#" id="menu6">Other</a>
+                        <a class="dropdown-item" href="home.php?page=Other">Other</a>
                     </div>
                 </li>
 
@@ -50,4 +50,3 @@
         </div>
     </nav>
 </div>
-<script src="../js/loadProduct.js"></script>
