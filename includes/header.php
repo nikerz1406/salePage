@@ -10,9 +10,9 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="home.php?page=%">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#">Computer</a>
-                </li>
+                </li> -->
                 <li class="nav-item dropdown" id="menuMain">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Laptop
@@ -50,4 +50,4 @@
         </div>
     </nav>
 </div>
-<script src="../js/loadProduct.js"></script>
+<script src="../js/loadAjaxChangeUrl.js"></script>

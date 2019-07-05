@@ -27,7 +27,7 @@ $(document).ready(function () {
         if (parts.length == 2) return parts.pop().split(";").shift();
     }
 
-    //rounter 
+    // //rounter 
     var page = getCookie("page");
 
     switch (page) {
@@ -38,10 +38,29 @@ $(document).ready(function () {
             // loadDoc("login.php", "center");
             break;
         case "admin":
-            //loadDoc("productAdmin.php", "center");
+            loadDoc("productAdmin.php", "center");
+            break;
+        case "Apple":
+            loadDoc("product.php?product=Apple", "center");
+            break;
+        case "Hp":
+            loadDoc("product.php?product=Hp", "center");
+            break;
+        case "Asus":
+            loadDoc("product.php?product=Asus", "center");
+            break;
+        case "Acer":
+            loadDoc("product.php?product=Acer", "center");
+            break;
+        case "Other":
+            loadDoc("product.php?product=Other", "center");
+            break;
+        case "Dell":
+            loadDoc("product.php?product=Dell", "center");
             break;
         default:
             loadDoc("product.php", "center");
+            break;
     }
 
 });

@@ -1,5 +1,5 @@
 <?php
-class Database{
+class SubDatabase{
 
     private $server ="mysql:host=localhost;dbname=phptest";
     private $username ="root";

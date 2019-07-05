@@ -1,6 +1,6 @@
 <?php
 function searchProduct($product="%"){
-include ("includes/database.php");
+include ("database.php");
 $conn = new Database();
 $html ="";
 $table = "product";

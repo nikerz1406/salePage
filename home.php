@@ -9,6 +9,7 @@
     <title>Product page</title>
     <?php
         include ("includes/link.php");
+        //include ("includes/goToIndex.php");
         include ("includes/session.php");
         include ("includes/saveCookie.php");
     ?>
@@ -16,13 +17,20 @@
 
 <body>
     <div id="header"></div>
+    <!-- <?php
+    var_dump($_SERVER);
+    ECHO "-----";
+    var_dump($_REQUEST);
+    ?>  -->
     <div class="container-fluid" id="center"></div>
     <div class="container-fluid bg-light" id="footer"></div>
+
 </body>
 <?php
 include ("includes/script.php");
 ?>
 <script src="BootstrapFontawesome/jquery/jquery.js"></script>
+<!-- <script src="js/loadAjaxChangeUrl.js"></script> -->
 <script src="js/loadPage.js"></script>
 
 </html>

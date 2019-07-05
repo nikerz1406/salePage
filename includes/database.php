@@ -7,6 +7,7 @@
  * select($field,$table,$condition="1")
  * insert($table,$data,$viewInsert=0)
  * update($table,$data,$condition,$viewUpdate=0)
+ * delete($table,$data,$condition,$viewUpdate=0)
  * tableNameId($table)
  * checkExists($table,$condition,$viewResult=0)
  */
@@ -187,7 +188,7 @@ class Database
         
         $sql = 'UPDATE ' . $table . ' SET ' . $field . " where " . $subCondition;
         
-        //echo $sql;
+        echo $sql;
         
         // update data
         try {
@@ -195,12 +196,22 @@ class Database
             $this->stmt->execute();
             
             // view or not view row updated
-            if ($viewUpdate != 0) {
-                $subField = $this->tableNameId($table);
-                $result   = $this->select("*", $table, $subCondition);
-            } else {
+            switch($viewUpdate){
+                case 0: // reuslt success of fail update
                 $result = true;
-            } //end view result mode
+                break;
+                case 1: // result is array updated
+                $result = $this->select("*", $table, $subCondition);
+                break;
+                case 2: // reuslt is array id of updated on table
+                $subField = $this->tableNameId($table);
+                $result = $this->select($subField, $table, $subCondition);
+                break;
+                default: // reuslt success of fail update
+                $result = true;
+                break;
+            }
+            //end view result mode
             
         }
         catch (Exception $ex) {
@@ -213,6 +224,61 @@ class Database
         
     } //end update
     
+        /**
+     * [Update description]
+     * @param string $table
+     * @param array|string $condition
+     * @param bool $viewUpdate
+     * @return bool|array $result
+    // DELETE FROM `table_name` [WHERE condition];
+    */
+    function delete($table, $condition="1=1", $viewDelete = 0)
+    {
+        $field = "";
+        $subCondition = "";
+
+        if (is_array($condition)) {
+            foreach ($condition as $key => $value) {
+                $subCondition .= $key . ' = "' . $value . '",';
+            }
+            $subCondition = (substr($subCondition, 0, strlen($subCondition) - 1));
+        } else {
+            $subCondition = $condition;
+        }
+
+        $sql = 'delete ' . $table ." where " . $subCondition;
+
+        echo $sql;
+
+        
+        try {
+            // view or not view row delete
+            switch ($viewDelete) {
+            case 0: // reuslt success of fail delete
+                $result = true;
+                break;
+            case 1: // result is array updated
+                $result = $this->select("*", $table, $subCondition);
+                break;
+            default: // reuslt success of fail delete
+                $result = true;
+                break;
+            }//end view result mode
+
+            // delete data
+            $this->stmt = $this->pdo->prepare($sql);
+            $this->stmt->execute();
+
+        } catch (Exception $ex) {
+            die($ex->getMessage());
+            $result = false;
+        }
+
+        $this->stmt = null;
+        return $result;
+
+    } //end update
+
     /**
      * [tableNameId description]
      * @param string $table
@@ -265,14 +331,20 @@ class Database
             $rowCount = $this->stmt->rowCount();
             
             // view or not view row check exist
-            if ($viewResult != 0 && $rowCount != 0) {
-                $field="*";
-                $result = $this->select($field, $table, $subCondition);
-                
-            } else {
-                
-                $result = true;
-            } //end view result mode
+            switch ($viewResult) {
+                case 0: // reuslt success of fail check
+                    $result = true;
+                case 1: // reuslt is array id of check on table
+                    $subField = $this->tableNameId($table);
+                    $result = $this->select($subField, $table, $subCondition);
+                    break;
+                case 2: // result is array check
+                    $result = $this->select("*", $table, $subCondition);
+                    break;
+                default: // reuslt success of fail check
+                    $result = true;
+                    break;
+            }//end view result mode
             
         }
         catch (Exception $ex) {
@@ -286,12 +358,4 @@ class Database
     }
 
 } // end class Database
-
-//SELECT table_name FROM information_schema.tables WHERE table_schema ='Database Name';
-// * select($field,$table,$condition="1")
-// * insert($table,$data,$viewInsert=0)
-// * update($table,$data,$condition,$viewUpdate=0)
-// * tableNameId($table)
-// * checkExists($table,$condition,$viewResult=0)
-
 ?>
