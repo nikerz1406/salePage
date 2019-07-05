@@ -1,6 +1,11 @@
 # salePage
-Send mail
-Capcha V3
+= function =
+Send mail sign
+Capcha V3 sign
+sign/login
+
+---------
+
 $git status
 $git add FileName
 $git commit -m "messenger"

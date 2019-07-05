@@ -1,5 +1,9 @@
-<!DOCTYPE html>
+<body>
+
+</body>
 <html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -30,7 +34,8 @@
 include ("includes/script.php");
 ?>
 <script src="BootstrapFontawesome/jquery/jquery.js"></script>
-<!-- <script src="js/loadAjaxChangeUrl.js"></script> -->
+
 <script src="js/loadPage.js"></script>
+<!-- <script src="js/loadAjax.js"></script> -->
 
 </html>

@@ -48,7 +48,7 @@ if (isset($_REQUEST["alert"])) {
 }
 ?>
 
-                <form action="register.php" method="POST" accept-charset="UTF-8">
+                <form action="modules/register.php" method="POST" accept-charset="UTF-8">
                     <div class="row">
                         <div class="col form-group">
                             <label for="firstName">First name</label>

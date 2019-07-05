@@ -8,7 +8,7 @@ require 'vendor/PHPMailer/PHPMailer/src/Exception.php';
 require 'vendor/PHPMailer/PHPMailer/src/PHPMailer.php';
 require 'vendor/PHPMailer/PHPMailer/src/SMTP.php';
 function sendMailPhpmailer($id,$activeCode,$email,$lastName){
-$templateMail="<h3>Account verification</h3></div><div>Your ID : ".$email."</div><a href='http://localhost/salePage/register.php?id=".$id."&activeCode=".$activeCode."'>click here for activate your account</a>";
+$templateMail="<h3>Account verification</h3></div><div>Your ID : ".$email."</div><a href='http://localhost/salePage/modules/register.php?id=".$id."&activeCode=".$activeCode."'>click here for activate your account</a>";
 $password = "TmpGaGJXRnJhR1U9";
 $mail = new PHPMailer(true);
 try {

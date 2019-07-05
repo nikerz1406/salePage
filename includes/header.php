@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="home.php?page=%">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="home.php?page=%">Home</a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link" href="#">Computer</a>
@@ -18,17 +18,17 @@
                         Laptop
                     </a>
                     <div class="dropdown-menu" style="top: 2.8em" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" id="menu1">Apple</a>
+                        <a class="dropdown-item" href="" id="menu1">Apple</a>
 
-                        <a class="dropdown-item" href="#" id="menu2">Hp</a>
+                        <a class="dropdown-item" href="" id="menu2">Hp</a>
 
-                        <a class="dropdown-item" href="#" id="menu3">Dell</a>
+                        <a class="dropdown-item" href="" id="menu3">Dell</a>
 
-                        <a class="dropdown-item" href="#" id="menu4">Acer</a>
+                        <a class="dropdown-item" href="" id="menu4">Acer</a>
 
-                        <a class="dropdown-item" href="#" id="menu5">Asus</a>
+                        <a class="dropdown-item" href="" id="menu5">Asus</a>
 
-                        <a class="dropdown-item" href="#" id="menu6">Other</a>
+                        <a class="dropdown-item" href="" id="menu6">Other</a>
                     </div>
                 </li>
 
@@ -42,12 +42,14 @@
 
             </div>
             <div>
-                <a class="nav-link text-dark" href="signup.php?page=sign" id="sign">Sign</a>
+                <a class="nav-link text-dark" href="" id="sign">Sign</a>
             </div>
             <div>
-                <a class="nav-link text-dark" href="admin.php?page=admin" id="log">admin</a>
+                <a class="nav-link text-dark" href="" id="log">login</a>
+            </div>
+            <div>
+                <a class="nav-link text-dark" href="home.php?page=admin" id="log">admin</a>
             </div>
         </div>
     </nav>
 </div>
-<script src="../js/loadAjaxChangeUrl.js"></script>

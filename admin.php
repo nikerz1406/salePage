@@ -9,7 +9,7 @@
     <title>Product page</title>
     <?php
         include "includes/link.php";
-        include ("includes/productAdmin.php");
+        include ("modules/admin/productAdmin.php");
         
     ?>
 </head>
