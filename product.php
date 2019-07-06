@@ -15,7 +15,7 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row mx-sm-4 my-sm-4">
+        <div class="row mx-sm-4 my-sm-4 mx-lg-12 my-lg-12">
             <?php
     //var_dump($_REQUEST); 
     

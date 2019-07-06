@@ -7,13 +7,20 @@ $(document).ready(function () {
             //,dataType: 'html,script'
         }).done(function (html) {
             $("#" + id).html(html);
-            if (id == "header") {
-                $.ajax({ url: "js/loadAjax.js" });
+            // load js 
+            switch (id) {
+                case "header":
+                default:
+                    $.ajax({ url: "js/loadHeader.js" });
+                    break;
+                case "center":
+                    $.ajax({ url: "js/loadCenter.js" });
+                    break;
+                case "footer":
+                    break;
             }
-
         });
     }
-
     // load ID header
     loadDoc("includes/header.php", "header");
 
@@ -22,4 +29,5 @@ $(document).ready(function () {
 
     //load  ID center
     loadDoc("product.php?product=%", "center");
+
 });
