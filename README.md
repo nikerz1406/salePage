@@ -13,6 +13,7 @@ $git commit -m "messenger"<br>
 $git push -u origin master<br>
 
 echo name_of_the_file_you_want_to_ignore.extension > .gitignore
+
 ----------
 …or create a new repository on the command line
 
