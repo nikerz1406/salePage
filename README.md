@@ -6,11 +6,11 @@ sign/login
 
 ---------
 
-$git status
-$git add FileName
-$git commit -m "messenger"
-[$git commit -a -m "messenger"]
-$git push -u origin master
+$git status\n
+$git add FileName\n
+$git commit -m "messenger"\n
+[$git commit -a -m "messenger"]\n
+$git push -u origin master\n
 ----------
 …or create a new repository on the command line
 echo "# test" >> README.md
