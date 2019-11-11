@@ -12,7 +12,11 @@ $git commit -m "messenger"<br>
 [$git commit -a -m "messenger"]<br>
 $git push -u origin master<br>
 
-echo name_of_the_file_you_want_to_ignore.extension > .gitignore
+$ echo debug.log >> .gitignore<br>
+$ git rm --cached debug.log<br>
+rm 'debug.log'<br>
+$ git commit -m "Start ignoring debug.log"<br>
+echo name_of_the_file_you_want_to_ignore.extension > .gitignore<br>
 
 ----------
 …or create a new repository on the command line
