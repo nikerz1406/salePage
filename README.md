@@ -6,11 +6,11 @@ sign/login
 
 ---------
 
-$git status
-$git add FileName
-$git commit -m "messenger"
-[$git commit -a -m "messenger"]
-$git push -u origin master
+$git status<br>
+$git add FileName<br>
+$git commit -m "messenger"<br>
+[$git commit -a -m "messenger"]<br>
+$git push -u origin master<br>
 
 ----------
 …or create a new repository on the command line
