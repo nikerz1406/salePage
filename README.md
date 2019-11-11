@@ -29,3 +29,6 @@ git push -u origin master<br>
 …or import code from another repository<br>
 
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.<br>
+
+------------
+https://github.com/tj/git-extras/blob/master/Commands.md
