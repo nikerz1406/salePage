@@ -38,3 +38,4 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 
 ------------
 https://github.com/tj/git-extras/blob/master/Commands.md
+https://rogerdudler.github.io/git-guide/index.vi.html
