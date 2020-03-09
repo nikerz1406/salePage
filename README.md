@@ -37,5 +37,5 @@ git push -u origin master<br>
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.<br>
 
 ------------
-https://github.com/tj/git-extras/blob/master/Commands.md
+https://github.com/tj/git-extras/blob/master/Commands.md <br>
 https://rogerdudler.github.io/git-guide/index.vi.html
