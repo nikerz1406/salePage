@@ -38,4 +38,5 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 
 ------------
 https://github.com/tj/git-extras/blob/master/Commands.md <br>
-https://rogerdudler.github.io/git-guide/index.vi.html
+https://rogerdudler.github.io/git-guide/index.vi.html <br>
+https://www.atlassian.com/git/tutorials/saving-changes/gitignore <br>
